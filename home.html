@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Калькулятор</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+</head> 
+<body>
+<script src="js/main.js"></script>
+<div id="pdf">
+<div class="container">
+<h1>Рассчитайте стоимость вашего потолка онлайн!</h1>
+</div>
+<div class="plus">
+<p>Комната №1</p>
+</div>
+<div class="plusGo">
+<img src="css/ant-design_plus-circle-outlined.svg"/>
+<p >Добавить комнату</p>
+</div>
+<div class="mainCont">
+</div>
+    <p id="p1">Площадь помещения:</p>
+    <div class="quant form-control"><input name = 'input1' class="input1 vibor1" id = "input1" type="text" data-step="1" value="10" data-min="10" />м<sup>2</sup>
+    <a class="minus_minpl minpl" id="minus_minpl"><img class = "plus_minus" src = "css/emojione-monotone_heavy-minus-sign.svg"></img></a>
+    <a class="plus_minpl minpl" id="plus_minpl"><img img class = "plus_minus"  src = "css/entypo_plus.svg"></img></a>
+</div>
+    <p id="p2">Количество углов:</p>
+    <div class="quant form-control1"><input class="input2 vibor1" type="text" id="input2" data-step="1" data-min="4" value="4" />шт
+    <a class="minus_minpl minpl" id="minus_minpl1"><img class = "plus_minus" src = "css/emojione-monotone_heavy-minus-sign.svg"></img></a>
+    <a class="plus_minpl minpl" id="plus_minpl1"><img img class = "plus_minus vibor"  src = "css/entypo_plus.svg"></img></a>
+</div>
+    <p id="p3">Фактура потолка:</p>
+    <div class="select_div">
+    <select class="select vibor" id="select1">
+        <option value="ПВХ">ПВХ</option>
+        <option value="Тканевый">Тканевой</option>
+      </select>
+    </div>
+
+    <div class="select_div1">
+        <select class="select1 vibor" id="select2">
+            <option value="Белый">Белый</option>
+            <option value="Цветной" checked>Цветной</option>
+          </select>
+        </div>
+
+    <img class="minus_minpl2"></img>
+    <p id="p4">Цвет потолка:</p>
+<div class="slider">
+</div>
+<p class="text-center result">Итого:<span class="val" id = "val" ></span> руб.</p>
+<button class="question"></button>
+<button class="button_1">Оформить заказ</button>
+<button class="button_2">Скачать смету</button>
+
+
+<div class="modal">
+
+    <p><b>ОФОРМЛЕНИЕ ЗАКАЗА</b></p>
+ 
+    <form action="">
+
+    <input id="name" type="text" name="name" placeholder="Введите ваше имя*"><br>
+ 
+    <input id="phone" type="text" name="email" placeholder="Введите ваш телефон*"><br>
+ 
+    <button type="button" class="cansel">ЗАКРЫТЬ</button>
+ 
+    <button type="button" class="send">ОТПРАВИТЬ</button>
+
+    </form>
+
+    </div>
+
+</div>
+</body>
